@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background: rgba(22, 22, 65, 0.966);
+}
+
+label.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    line-height: 80px;
+    padding: 0 50px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 50px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 80px;
+}
+
+nav a {
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white transparent;
+    padding: 7px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+a:hover {
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+nav #icon {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+@media (max-width:1441px) {
+    label.logo {
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul {
+        margin-left: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+    nav #icon {
+        display: none;
+    }
+    section {
+        background: url(https://cdn.pixabay.com/photo/2015/02/06/09/55/office-625893_960_720.jpg);
+        background-size: cover;
+        height: 88vh;
+        width: 100%;
+    }
+}
+
+@media (max-width:909px) {
+    nav #icon {
+        display: inline-block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(17, 16, 16, 0.582);
+        top: 80px;
+        left: -120%;
+        text-align: center;
+        transition: 1s;
+    }
+    nav li {
+        display: block;
+        margin: 50px 0px;
+        line-height: 50px;
+    }
+    a:hover {
+        border: none;
+        color: rgba(22, 22, 65, 0.966);
+    }
+    nav ul.show {
+        left: -20px;
+    }
+}
